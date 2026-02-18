@@ -11,12 +11,7 @@ class contaCorrente {
         } else {
             this.#saldo = saldoInicial
         }
-        if (limite < 0) {
-            this.#limite = 0
-            console.log("limite insuficiente")
-        } else {
-            this.#limite = limite
-        }
+        this.#limite = limite
         this.#historico = []
         this.#numeroConta = numeroConta
     }
@@ -32,10 +27,12 @@ class contaCorrente {
     get limite() {
         return this.#limite
     }
+
     set limite(valor) {
         if (valor >= 0) {
-            this.#limite = valor
             console.log("limite aceitavel")
+            this.#limite = valor
+
         } else {
             console.log("limite insuficiente")
         }
@@ -80,6 +77,7 @@ class contaCorrente {
 const cliente = new contaCorrente(23123, 110, 400)
 const cliente1 = new contaCorrente(121212, 0, 60)
 const cliente2 = new contaCorrente(343445, 10, 0)
+cliente2.limite = 450
 
 cliente.depositar(30)
 cliente.sacar(100)
