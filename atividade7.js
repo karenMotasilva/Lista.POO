@@ -25,11 +25,11 @@ class Livro{
         this.#disponivel = false 
         return `O Livro ${this.#titulo}, foi devolvido`
        }   
-        estaDisponivel();{
+        estaDisponivel(){
        return this.#disponivel = true
 
        }
-       idadeLivro();{
+       idadeLivro(){
         const anoAtual = new Date().getFullYear()
         return anoAtual ; this.#anoPublicado
        }
