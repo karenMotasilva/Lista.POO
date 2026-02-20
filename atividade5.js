@@ -9,20 +9,20 @@ class Produto {
     get nome() {
         return this._nome
     }
-    set nome(i) {
-        this._nome = i
+    set nome(novoNome) {
+        this._nome = novoNome
     }
     get preco() {
         return this._preco
     }
-    set preco(i) {
-        this._preco = i
+    set preco(novoPreco) {
+        this._preco = novoPreco
     }
     get quantidade() {
         return this._quantidade
     }
-    set quantidade(i) {
-        this._quantidade = i
+    set quantidade(novaQuantidade) {
+        this._quantidade = novaQuantidade
     }
     calculatTotal() {
         return this._preco * this._quantidade

@@ -8,28 +8,28 @@ class Veiculo {
     get placa() {
         return this._placa
     }
-    set placa(i) {
-        this._placa = i
+    set placa(novaPlaca) {
+        this._placa = novaPlaca
     }
     get modelo() {
         return this._modelo
     }
-    set modelo(i) {
-        this._modelo = i
+    set modelo(novoModelo) {
+        this._modelo = novoModelo
     }
     get capacidade() {
         return this._capacidade
     }
-    set capacidade(i) {
+    set capacidade(novaCapacidade) {
         if (i > 0) {
-            this._capacidade = i
+            this._capacidade = novaCapacidade
         }
     }
     get numeroPassageiros() {
         return this._numeroPassageiros
     }
-    set numeroPassageiros(i) {
-        this._numeroPassageiros = i
+    set numeroPassageiros(novoNumeroPassageiros) {
+        this._numeroPassageiros = novoNumeroPassageiros
     }
 
     capacidadeMaxima() {
@@ -51,8 +51,8 @@ class Onibus extends Veiculo {
     get linha() {
         return this._linha
     }
-    set linha(i) {
-        this._linha = i
+    set linha(novaLinha) {
+        this._linha = novaLinha
     }
 }
 class Metro extends Veiculo {
@@ -63,9 +63,9 @@ class Metro extends Veiculo {
     get numeroDevagoes() {
         return this._numeroDevagoes
     }
-    set numeroDevagoes(i) {
+    set numeroDevagoes(novoNumerodeVagoes) {
         if (i > 0) {
-            this._numeroDevagoes = i
+            this._numeroDevagoes = novoNumerodeVagoes
         }
     }
 }
@@ -78,8 +78,8 @@ class Bilhete {
     get codigo() {
         return this._codigo
     }
-    set codigo(i) {
-        this._codigo = i
+    set codigo(novoCodigo) {
+        this._codigo = novoCodigo
     }
     get saldo() {
         return this._saldo

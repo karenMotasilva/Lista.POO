@@ -8,22 +8,22 @@ class Retangulo {
     get base() {
         return this.#base
     }
-    set base(i) {
+    set base(novaBase) {
         if (i < 0) {
             console.log("Valor da base menor que zero")
 
         } else {
-            this.#base = i
+            this.#base = novaBase
         }
     }
     get altura() {
         return this.#altura
     }
-    set altura(i) {
+    set altura(novaAltura) {
         if (i < 0) {
             console.log("Valor da altura menor que zero")
         } else {
-            this.#altura = i
+            this.#altura = novaAltura
         }
     }
     calcularArea() {
@@ -41,9 +41,9 @@ class Retangulo {
             return false
         }
     }
-    redimensionaeFator(i) {
-        this.#base = this.#base * i
-        this.#altura = this.altura * i
+    redimensionaeFator(fator) {
+        this.#base = this.#base * fator
+        this.#altura = this.altura * fator
         console.log("base redimensionada para: " + this.#base + " altura redimensionada para: " + this.#altura)
     }
 
@@ -65,5 +65,6 @@ objeto2.quadrado()
 objeto.redimensionaeFator(2)
 objeto1.redimensionaeFator(3)
 objeto2.redimensionaeFator(5)
+
 
 

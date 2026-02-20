@@ -7,14 +7,14 @@ class Animal {
     get nome() {
         return this._nome
     }
-    set nome(i) {
-        this._nome = i
+    set nome(novoNome) {
+        this._nome = novoNome
     }
     get tipo() {
         return this._tipo
     }
-    set tipo(i) {
-        this._tipo = i
+    set tipo(novoTipo) {
+        this._tipo = novoTipo
     }
 
 }
@@ -54,4 +54,4 @@ animal2.emitirSom()
 
 const animal3 = new Cobra("cobra", "réptio")
 console.log("o nome do animal é: " + animal3._nome + "\ntipo: " + animal3._tipo)
-animal3.emitirSom()
+animal3.emitirSom() 
